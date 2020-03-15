@@ -10,7 +10,7 @@ public class C1 {
     //hashset class implmetn set interface 
     //exisiting valu remove
     //can be use duplicate value remove 
-    
+    //also implements Searlizable and Cloneable interfaces.
     
     public static void main(String[] args) {
         Integer[] a={1,23,2,1,3,2};
