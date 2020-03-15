@@ -1,0 +1,45 @@
+
+package c1;
+
+import java.util.Arrays;
+import java.util.LinkedHashSet;
+import java.util.Set;
+
+public class C1 {
+
+    /*
+    Stack Over flow
+ HashSet is unordered and unsorted Set.
+LinkedHashSet is the ordered version of HashSet.
+
+The only difference between HashSet and LinkedHashSet is that:
+LinkedHashSet maintains the insertion order.
+
+When we iterate through a HashSet, the order is unpredictable while it is predictable in case of LinkedHashSet.
+
+The reason for how LinkedHashSet maintains insertion order is that:
+The underlying used data structure is Doubly-Linked-List.
+    */
+    
+    //remove duplicate ever
+    public static void main(String[] args) {
+       
+       Set<Integer> f1=new LinkedHashSet<Integer>();
+       
+       f1.add(12);
+       f1.add(2);
+       f1.add(5);
+       f1.add(7);
+       f1.add(9);
+       f1.add(55);
+       f1.add(55);
+       f1.add(55);
+       f1.add(11);
+       f1.add(14);
+       System.out.print(f1);
+       
+       
+        
+    }
+    
+}
