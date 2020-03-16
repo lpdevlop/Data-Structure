@@ -1,0 +1,39 @@
+
+package c1;
+
+import java.util.Iterator;
+import java.util.Set;
+import java.util.TreeSet;
+
+
+public class C1 {
+
+    //1.object should be homogenous and comparable  
+    //2.remove duplicate ever
+    //Java TreeSet class contains unique elements only like HashSet.
+    
+/*Java TreeSet class access and retrieval times are quiet fast.
+Java TreeSet class doesn't allow null element.
+Java TreeSet class is non synchronized.
+Java TreeSet class maintains ascending order.
+  */
+    
+    public static void main(String[] args) {
+       
+     Set<Integer> ts=new TreeSet<>();
+       ts.add(1);
+       ts.add(23);
+       ts.add(55);
+       ts.add(89);
+       ts.add(43);
+       ts.add(23);
+       ts.add(98);
+             //   Iterator i=ts.descendingIterator();   decending order
+
+        Iterator<Integer> itr=ts.iterator();  
+  while(itr.hasNext()){  
+   System.out.println(itr.next());  
+  }  
+       
+       
+       
