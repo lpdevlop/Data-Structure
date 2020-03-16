@@ -1,0 +1,34 @@
+package c1;
+
+import java.util.SortedSet;
+import java.util.TreeSet;
+
+
+
+
+public class C1 {
+
+  
+    public static void main(String[] args) {
+       
+    SortedSet<Integer> ss=new TreeSet<>();
+        
+    ss.add(1);
+    ss.add(10200);
+    ss.add(43);
+    ss.add(87);
+    ss.add(34);
+    ss.add(23);
+    
+    System.out.println(ss);
+    System.out.println(ss.first());
+    System.out.println(ss.last());
+    System.out.println(ss.headSet(87));
+    System.out.println(ss.subSet(1, 34));
+     
+  }  
+       
+       
+       
+        
+    }
