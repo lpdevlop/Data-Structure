@@ -1,0 +1,37 @@
+
+package c1;
+
+import java.util.NavigableSet;
+import java.util.SortedSet;
+import java.util.TreeSet;
+
+
+
+
+public class C1 {
+
+  //NavigableSet interface can navigate the set in reverse order compared to the order defined in SortedSet
+   //Sorted set can not navigate function then java intrduce navigateset interface
+    public static void main(String[] args) {
+       
+    NavigableSet<Integer> ss=new TreeSet<>();
+    SortedSet<Integer> st=new TreeSet<>();
+    
+    ss.add(1);
+    ss.add(45);
+    ss.add(43);
+    st.add(18);
+    st.add(45);
+    st.add(43);
+    
+    System.out.println(ss);
+    System.out.println(st);
+   
+     
+  }  
+       
+       
+       
+        
+    }
+    
